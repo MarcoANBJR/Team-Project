@@ -49,9 +49,7 @@ function createCertificate(){
     $('#inputCertificateList').value= ''
    
   });
-}
-
- 
+} 
 
 function addClass() {
   $('.img-heart').classList.add('blue-heart')
