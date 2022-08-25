@@ -26,16 +26,16 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <script defer src="/JS/helpers/helper.js"></script>
-    <script defer src="/JS/certificate.js"></script>
-    <script defer src="/JS/basic.js"></script>
-    <script defer src="/JS/social.js"></script>
-    <script defer src="/JS/models/people.js"></script>
-    <script defer src="/JS/main.js"></script>
-    <script defer src="/JS/models/certificates.js"></script>
-    <script defer src="/JS/localStorage.js"></script>
+    <script defer src="/APP/JS/helpers/helper.js"></script>
+    <script defer src="/APP/JS/certificate.js"></script>
+    <script defer src="/APP/JS/basic.js"></script>
+    <script defer src="/APP/JS/social.js"></script>
+    <script defer src="/APP/JS/models/people.js"></script>
+    <script defer src="/APP/JS/main.js"></script>
+    <script defer src="/APP/JS/models/certificates.js"></script>
+    <script defer src="/APP/JS/localStorage.js"></script>
 
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/APP/styles/style.css" />
 
 
     <title>TeamProject</title>
@@ -274,7 +274,7 @@
           Members
         </button>
         <button id="submitBasic" type="submit" class="btn btn-primary">
-          Next <img src="/images/Trailing Icon.svg" />
+          Next <img src="/APP/images/Trailing Icon.svg" />
         </button>
       </div>
     </section>
@@ -289,6 +289,9 @@
           placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/"          
           oninput="saveLocal()"
         />
+        <span id="spanLinkedin" class="invisible alert alert-danger"
+          >Invalid Linkedin!</span
+        >
       </div>
       <div class="mb-3">
         <label for="inputGitHub" class="form-label">Github *</label>
@@ -305,14 +308,14 @@
       </div>
       <div class="d-flex justify-content-end social-next">
         <button id="submitSocial" type="submit" class="btn btn-primary">
-          Next <img src="/images/Trailing Icon.svg" />
+          Next <img src="/APP/images/Trailing Icon.svg" />
         </button>
       </div>
     </section>
 
     <section id="certificates">
       <div class="relative-heart">
-        <label for="inputHeart" class="labelInputHeart"><img class="img-heart" src="/images/heart.svg"></label>
+        <label for="inputHeart" class="labelInputHeart"><img class="img-heart" src="/APP/images/heart.svg"></label>
         <input type="checkbox" id="inputHeart" class="invisible" >
         
         <label class="form-label" for="inputCertificateList">Certificates</label>
@@ -332,7 +335,7 @@
           type="submit"
           class="btn btn-primary  "
         >
-          <img src="/images/Leading Icon.svg" /> More
+          <img src="/APP/images/Leading Icon.svg" /> More
         </button></div>
         <ul id="certificateList"></ul>
         
@@ -371,13 +374,13 @@
         placeholder="Ciências da Computação"
         oninput="saveLocal()"
         />
-        <span id="spanGraduation" class="invisible alert alert-danger">
+        <span id="spanGruduation" class="invisible alert alert-danger">
           Invalid Graduation !</span
         >
       </div>
       <div class="d-flex justify-content-end">
         <button id="finish" type="submit" class="btn btn-primary">
-          <img src="/images/correctIcon.svg" /> Finish
+          <img src="/APP/images/correctIcon.svg" /> Finish
         </button>
       </div>
     </section>
